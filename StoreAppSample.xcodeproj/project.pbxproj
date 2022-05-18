@@ -15,8 +15,6 @@
 		EA614C4928353C2300764CE5 /* StoreAppSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA614C4828353C2300764CE5 /* StoreAppSampleUITests.swift */; };
 		EA614C4B28353C2300764CE5 /* StoreAppSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA614C4A28353C2300764CE5 /* StoreAppSampleUITestsLaunchTests.swift */; };
 		EA614C5928353D6500764CE5 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA614C5828353D6500764CE5 /* AppConfiguration.swift */; };
-		EA614C5C28353DED00764CE5 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = EA614C5B28353DED00764CE5 /* SwiftKeychainWrapper */; };
-		EA614C5E28353E1400764CE5 /* KeyChainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA614C5D28353E1400764CE5 /* KeyChainWrapper.swift */; };
 		EA614C6128353E3B00764CE5 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA614C6028353E3B00764CE5 /* Bundle+Extensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +48,6 @@
 		EA614C4A28353C2300764CE5 /* StoreAppSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreAppSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EA614C5728353D1E00764CE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EA614C5828353D6500764CE5 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
-		EA614C5D28353E1400764CE5 /* KeyChainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainWrapper.swift; sourceTree = "<group>"; };
 		EA614C6028353E3B00764CE5 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,7 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA614C5C28353DED00764CE5 /* SwiftKeychainWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +108,6 @@
 				EA614C6428353E7B00764CE5 /* Common */,
 				EA614C6628353E9400764CE5 /* Infrastructure */,
 				EA614C5728353D1E00764CE5 /* Info.plist */,
-				EA614C2F28353C1E00764CE5 /* ContentView.swift */,
 			);
 			path = StoreAppSample;
 			sourceTree = "<group>";
@@ -162,6 +157,7 @@
 		EA614C6328353E6900764CE5 /* ViperStack */ = {
 			isa = PBXGroup;
 			children = (
+				EA614C2F28353C1E00764CE5 /* ContentView.swift */,
 			);
 			path = ViperStack;
 			sourceTree = "<group>";
@@ -169,7 +165,6 @@
 		EA614C6428353E7B00764CE5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				EA614C6828353F6D00764CE5 /* Config */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -194,14 +189,6 @@
 				EA614C3328353C2200764CE5 /* Preview Content */,
 			);
 			path = "Supporting files";
-			sourceTree = "<group>";
-		};
-		EA614C6828353F6D00764CE5 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				EA614C5D28353E1400764CE5 /* KeyChainWrapper.swift */,
-			);
-			path = Config;
 			sourceTree = "<group>";
 		};
 		EA614C6928353F8400764CE5 /* Ressources */ = {
@@ -229,7 +216,6 @@
 			);
 			name = StoreAppSample;
 			packageProductDependencies = (
-				EA614C5B28353DED00764CE5 /* SwiftKeychainWrapper */,
 			);
 			productName = StoreAppSample;
 			productReference = EA614C2A28353C1E00764CE5 /* StoreAppSample.app */;
@@ -350,7 +336,6 @@
 			files = (
 				EA614C5928353D6500764CE5 /* AppConfiguration.swift in Sources */,
 				EA614C6128353E3B00764CE5 /* Bundle+Extensions.swift in Sources */,
-				EA614C5E28353E1400764CE5 /* KeyChainWrapper.swift in Sources */,
 				EA614C3028353C1E00764CE5 /* ContentView.swift in Sources */,
 				EA614C2E28353C1E00764CE5 /* StoreAppSampleApp.swift in Sources */,
 			);
@@ -694,14 +679,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		EA614C5B28353DED00764CE5 /* SwiftKeychainWrapper */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = EA614C5A28353DED00764CE5 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
-			productName = SwiftKeychainWrapper;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EA614C2228353C1E00764CE5 /* Project object */;
 }
