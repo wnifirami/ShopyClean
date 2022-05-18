@@ -6,7 +6,7 @@
 //
 
 import Foundation
-enum EndPoints {
+public enum EndPoints {
     /// cases
     case registerUser
     case loginUser
@@ -23,6 +23,6 @@ enum EndPoints {
 }
 /// concatination a l'url de base
 extension EndPoints: CustomStringConvertible {
-    var description: String { return AppConfiguration.baseUrl.appending(path)  }
+    public var description: String { return AppConfiguration.baseUrl.appending(path)  }
 }
 
